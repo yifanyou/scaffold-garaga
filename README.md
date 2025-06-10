@@ -35,6 +35,7 @@ Finally we need to install Garaga. Make sure you have Python 3.10 in your system
 ```sh
 make install-garaga
 ```
+If you encountered installing garaga failed in your operating system, use docker install is preferred, here's the guide for your reference(https://www.notion.so/Steps-to-Run-the-Scaffold-Garaga-Demo-in-Docker-20e8ba8810a480eb8817f89f2168f21f?source=copy_link)
 
 Note that we need specific versions of Noir, Barretenberg, and Garaga to work well together. If you are experiencing any issues with code generation, proving, and verification — first of all ensure you have the correct package versions.
 

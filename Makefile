@@ -3,7 +3,7 @@ install-bun:
 
 install-noir:
 	curl -L https://raw.githubusercontent.com/noir-lang/noirup/refs/heads/main/install | bash
-	noirup --version 1.0.0-beta.3
+	noirup --version 1.0.0-beta.6
 
 install-barretenberg:
 	curl -L https://raw.githubusercontent.com/AztecProtocol/aztec-packages/refs/heads/master/barretenberg/bbup/install | bash
@@ -14,10 +14,10 @@ install-starknet:
 
 install-devnet:
 	asdf plugin add starknet-devnet
-	asdf install starknet-devnet 0.4.1
+	asdf install starknet-devnet 0.4.2
 
 install-garaga:
-	pip install garaga==0.18.0
+	pip install garaga==0.18.1
 
 install-app-deps:
 	cd app && bun install
@@ -51,7 +51,7 @@ declare-verifier:
 
 deploy-verifier:
 	# TODO: use class hash from the result of the `make declare-verifier` step
-	cd contracts && sncast deploy --salt 0x00 --class-hash 0x074b93dc3cddcd328f8b242b782deef775d60b0ff494a1f71c315ea579d15941
+	cd contracts && sncast deploy --salt 0x00 --class-hash 0x061dac032f228abef9c6626f995015233097ae253a7f72d68552db02f2971b8f
 
 artifacts:
 	cp ./circuit/target/circuit.json ./app/src/assets/circuit.json
